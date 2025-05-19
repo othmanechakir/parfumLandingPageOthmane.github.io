@@ -65,4 +65,47 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // Navigation mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+
+    // Fermer le menu mobile quand on clique sur un lien
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.classList.remove('nav-open');
+        });
+    });
+
+    // Cacher/Montrer la navigation au scroll
+    let lastScrollNav = 0;
+    const nav = document.querySelector('.nav');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            nav.classList.remove('scroll-up');
+            return;
+        }
+
+        if (currentScroll > lastScrollNav && !nav.classList.contains('scroll-down')) {
+            // Scroll vers le bas
+            nav.classList.remove('scroll-up');
+            nav.classList.add('scroll-down');
+        } else if (currentScroll < lastScrollNav && nav.classList.contains('scroll-down')) {
+            // Scroll vers le haut
+            nav.classList.remove('scroll-down');
+            nav.classList.add('scroll-up');
+        }
+        lastScrollNav = currentScroll;
+    });
 });
