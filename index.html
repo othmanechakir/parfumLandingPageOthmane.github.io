@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfums Maroc - Collection Exclusive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Parfums</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#histoire">Notre Histoire</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">Collection Exclusive</span>
+                <h1>L'Art du Parfum<br>de Niche</h1>
+                <p class="hero-description">Une expérience olfactive unique, créée pour les connaisseurs</p>
+                <div class="hero-cta">
+                    <a href="#collection" class="cta-button">Explorer la Collection</a>
+                    <a href="#histoire" class="cta-button-secondary">Notre Histoire</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span class="scroll-text">Découvrir</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <div class="section-header">
+                <span class="section-subtitle">Nos Créations</span>
+                <h2>Collection Signature</h2>
+            </div>
+            <div class="perfume-grid">
+                <article class="perfume-card">
+                    <div class="perfume-image">
+                        <img src="image/image-1.webp" alt="Parfum Amber Royal">
+                        <div class="perfume-overlay">
+                            <span class="perfume-category">Oriental</span>
+                        </div>
+                    </div>
+                    <div class="perfume-info">
+                        <h3>Amber Royal</h3>
+                        <div class="perfume-notes">
+                            <span class="note">Ambre</span>
+                            <span class="note">Oud</span>
+                            <span class="note">Vanille</span>
+                        </div>
+                        <p class="perfume-description">Une composition envoûtante aux notes profondes et mystérieuses
+                        </p>
+                        <button class="view-details">
+                            <span>Découvrir</span>
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <div class="collection-nav">
+                <button class="nav-button prev">Précédent</button>
+                <button class="nav-button next">Suivant</button>
+            </div>
+        </section>
+
+        <section id="histoire" class="story">
+            <div class="story-content">
+                <span class="section-subtitle">Notre Histoire</span>
+                <h2>L'Excellence des Parfums</h2>
+                <p class="story-text">Une passion pour les parfums d'exception, née au cœur du Maroc, où l'art de la
+                    parfumerie rencontre la tradition millénaire</p>
+                <a href="#contact" class="story-cta">En savoir plus</a>
+            </div>
+            <div class="story-image">
+                <img src="image/parfumerie.jpg" alt="Notre atelier de création">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <span class="section-subtitle">Contactez-nous</span>
+            <h2>Parlons de Votre Passion</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span>Envoyer le Message</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Parfums</h3>
+                <p>Découvrez notre collection exclusive de parfums artisanaux, créés avec passion au cœur du Maroc. Une expérience olfactive unique qui raconte une histoire.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.6668 6.67334C18.0002 7.00001 17.3335 7.13334 16.6668 7.33334C16.0002 6.66667 15.0002 6.33334 14.0002 6.33334C12.0002 6.33334 10.3335 8.00001 10.3335 10C10.3335 10.3333 10.3335 10.6667 10.4668 11C7.33351 10.8667 4.66684 9.33334 2.66684 7C2.33351 7.66667 2.16684 8.33334 2.16684 9.16667C2.16684 10.6667 3.00018 12 4.16684 12.8333C3.66684 12.8333 3.16684 12.6667 2.66684 12.5C2.66684 14.3333 4.00018 15.8333 5.83351 16.1667C5.50018 16.3333 5.00018 16.3333 4.66684 16.3333C4.33351 16.3333 4.00018 16.3333 3.66684 16.2C4.33351 17.7333 5.83351 18.8333 7.50018 18.8333C6.16684 19.8333 4.50018 20.4 2.66684 20.4C2.33351 20.4 2.00018 20.4 1.66684 20.3333C3.33351 21.4 5.33351 22 7.33351 22C14.0002 22 17.6668 16.3333 17.6668 11.5C17.6668 11.3333 17.6668 11.1667 17.6668 11C18.3335 10.5 18.8668 9.83334 19.3335 9.16667C18.8002 9.33334 18.1668 9.5 17.5335 9.5C18.1668 9 18.6668 8.33334 19.0002 7.33334C18.3668 7.83334 17.6668 8.16667 16.8335 8.33334C16.3335 7.66667 15.5002 7.33334 14.6668 7.33334Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8.24537V12.0454H19.1164L18.7083 15.2454H16V23.0454H12.7V15.2454H10V12.0454H12.7V8.71537C12.7 6.11537 14.2917 4.54537 16.7083 4.54537C17.8917 4.54537 19 4.71537 19 4.71537V7.54537H17.4167C15.9167 7.54537 15.4167 8.54537 15.4167 9.54537V12.0454H18.7083L18.3 15.2454H15.4167V23.0454H12.1167V15.2454H9.41667V12.0454H12.1167V8.71537C12.1167 6.11537 13.7083 4.54537 16.125 4.54537C17.3083 4.54537 18.4167 4.71537 18.4167 4.71537V7.54537H16.8333C15.3333 7.54537 14.8333 8.54537 14.8333 9.54537V12.0454H18.1167L17.7083 15.2454H14.8333V23.0454H12.7V15.2454H10V12.0454H12.7V8.24537Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.16667C14.5333 2.16667 14.8833 2.16667 16.0833 2.25C17.1833 2.33333 17.9167 2.5 18.5833 2.75C19.2667 3 19.8333 3.33333 20.4 3.9C20.9667 4.46667 21.3 5.03333 21.55 5.71667C21.8 6.38333 21.9667 7.11667 22.05 8.21667C22.1333 9.41667 22.1333 9.76667 22.1333 12.3C22.1333 14.8333 22.1333 15.1833 22.05 16.3833C21.9667 17.4833 21.8 18.2167 21.55 18.8833C21.3 19.5667 20.9667 20.1333 20.4 20.7C19.8333 21.2667 19.2667 21.6 18.5833 21.85C17.9167 22.1 17.1833 22.2667 16.0833 22.35C14.8833 22.4333 14.5333 22.4333 12 22.4333C9.46667 22.4333 9.11667 22.4333 7.91667 22.35C6.81667 22.2667 6.08333 22.1 5.41667 21.85C4.73333 21.6 4.16667 21.2667 3.6 20.7C3.03333 20.1333 2.7 19.5667 2.45 18.8833C2.2 18.2167 2.03333 17.4833 1.95 16.3833C1.86667 15.1833 1.86667 14.8333 1.86667 12.3C1.86667 9.76667 1.86667 9.41667 1.95 8.21667C2.03333 7.11667 2.2 6.38333 2.45 5.71667C2.7 5.03333 3.03333 4.46667 3.6 3.9C4.16667 3.33333 4.73333 3 5.41667 2.75C6.08333 2.5 6.81667 2.33333 7.91667 2.25C9.11667 2.16667 9.46667 2.16667 12 2.16667ZM12 7.16667C9.25 7.16667 7 9.41667 7 12.1667C7 14.9167 9.25 17.1667 12 17.1667C14.75 17.1667 17 14.9167 17 12.1667C17 9.41667 14.75 7.16667 12 7.16667ZM18.5 6.91667C18.5 6.16667 17.9167 5.58333 17.1667 5.58333C16.4167 5.58333 15.8333 6.16667 15.8333 6.91667C15.8333 7.66667 16.4167 8.25 17.1667 8.25C17.9167 8.25 18.5 7.66667 18.5 6.91667ZM12 9.08333C13.7 9.08333 15.0833 10.4667 15.0833 12.1667C15.0833 13.8667 13.7 15.25 12 15.25C10.3 15.25 8.91667 13.8667 8.91667 12.1667C8.91667 10.4667 10.3 9.08333 12 9.08333Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#histoire">Notre Histoire</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Conditions Générales</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                    <li><a href="#">Expédition & Retours</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Parfums. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
